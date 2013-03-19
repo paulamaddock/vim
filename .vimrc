@@ -63,6 +63,7 @@ map <F4> <Esc>:TlistOpen<CR>
 " Turn auto indent off and on
 map <F5> <Esc>:call ToggleAutoIndent()<CR>
 
+" Toggle functions
 function! ToggleNumber()
     if (&number == 1)
         set nonumber
@@ -76,5 +77,6 @@ function! ToggleAutoIndent()
         set noautoindent
     else
         set autoindent
+        set nocin
     endif
 endfunction
